@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Variables */
+:root {
+    --main-color: #ef4444;
+    --bg-color: #f1f1f1;
+    --text-color: #111;
+}
+/* End Variables */
+
+/* Main */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    padding: 20px;
+}
+/* End Main */
+
+/* Header */
+.header {
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    background-color: #f6f6f6;
+}
+.header .brand {
+    font-size: 30px;
+}
+.header .links ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header a {
+    color: var(--text-color);
+    transition: 0.3s all ease-in-out;
+}
+.header a.login {
+    color: #fff;
+    background-color: var(--main-color);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+.header a:hover,
+.header a.active {
+    color: var(--main-color);
+}
+.header a.login:hover,
+.header a.login.active {
+    opacity: 0.8;
+    color: #fff;
+}
+/* End Header */

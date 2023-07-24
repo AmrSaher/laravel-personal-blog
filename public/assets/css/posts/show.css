@@ -1,0 +1,28 @@
+/* Card */
+.card {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.card .card-img {
+    width: 40%;
+}
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+    .card .card-img {
+        width: 100%;
+    }
+}
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card .card-date {
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+}
+/* End Card */
